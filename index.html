@@ -1,92 +1,40 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-  <meta charset='utf-8'>
-
-  <title>khamisco/Blogspot-Image-Extractor- @ GitHub</title>
-
-  <style type="text/css">
-    body {
-      margin-top: 1.0em;
-      background-color: #cd9018;
-      font-family: Helvetica, Arial, FreeSans, san-serif;
-      color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-    h1 { font-size: 3.8em; color: #326fe7; margin-bottom: 3px; }
-    h1 .small { font-size: 0.4em; }
-    h1 a { text-decoration: none }
-    h2 { font-size: 1.5em; color: #326fe7; }
-    h3 { text-align: center; color: #326fe7; }
-    a { color: #326fe7; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-    pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-  </style>
+<link rel="stylesheet" type="text/css" href="js/styles.css" />
+  <title>Upload an Image</title>
+	
 </head>
-
 <body>
-  <a href="https://github.com/khamisco/Blogspot-Image-Extractor-"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
-
-  <div id="container">
-
-    <div class="download">
-      <a href="https://github.com/khamisco/Blogspot-Image-Extractor-/zipball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/zip.png"></a>
-      <a href="https://github.com/khamisco/Blogspot-Image-Extractor-/tarball/master">
-        <img border="0" width="90" src="https://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="https://github.com/khamisco/Blogspot-Image-Extractor-">Blogspot-Image-Extractor-</a>
-      <span class="small">by <a href="https://github.com/khamisco">khamisco</a></span></h1>
-
-    <div class="description">
-      Extract Images' Links from a given URL of a blog.
-    </div>
-
-    
-      <p>Extract Images' Links from a given URL of a blog.</p>
-    
-
-    
-
-    
-      <h2>Install</h2>
-      <p>1-Download the files 
-2- Place them in your www folder.
-3- run extract.php.</p>
-    
-
-    
-
-    
-
-    
-      <h2>Contact</h2>
-      <p>Mohammad Abdallah Khamis (khamisco@gmail.com)<br/>      </p>
-    
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="https://github.com/khamisco/Blogspot-Image-Extractor-/zipball/master">zip</a> or
-      <a href="https://github.com/khamisco/Blogspot-Image-Extractor-/tarball/master">tar formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/khamisco/Blogspot-Image-Extractor-</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="https://github.com/khamisco/Blogspot-Image-Extractor-">khamisco/Blogspot-Image-Extractor-</a>
-    </div>
-
+           <form action="extractedIMages.php" method="post" enctype="multipart/form-data">
+<table width="100%" border="0" align="center">
+  <tr bgcolor="#00CCFF">
+    <td align="center" bgcolor="#00CCFF" style="color: #F00; font-size: 16px;">
+      <div style="padding:5px; background-color: #FFC; border:medium; border-style:dashed; border-color: #F90; font-size: 18px; color: #000;">
+      Extract Images from URL
+      </div>
+   </td>
+  </tr>
+  <tr>
+    <td align="center" bgcolor="#E1EFFF">
+      <div align="center">
+      <br/>
+        <input name="URL" type="text" size="100" />
+        <br/><br/>
+        <input name="updateBtn1" type="submit" id="updateBtn1" value="Submit URL" />
+        <input name="parse_var1" type="hidden" value="URL" />
+      </div></td>
+  </tr>
+</table>
+  </form>
   </div>
+  </td>
+  </tr>
+  <tr>
+  <td>
+  @copyright reserved <a href="www.khamis.me" target="_blank">khamis.me</a></td>
+  </tr>
+</table>
 
 </body>
 </html>
